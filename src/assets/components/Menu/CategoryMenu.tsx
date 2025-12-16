@@ -5,7 +5,7 @@ interface CategoryProps {
 
 export default function CategoryMenu({ name, href }: CategoryProps) {
 	return (
-		<a href={href} className='inline-block px-6 py-3 bg-cwel font-bold text-[14px] rounded-2xl text-black hover:text-accent transition-colors'>
+		<a href={href} className='inline-block px-6 py-3 bg-cwel font-bold text-[14px] rounded-2xl text-black hover:text-accent transition-colors cursor-pointer'>
 			{name}
 		</a>
 	)

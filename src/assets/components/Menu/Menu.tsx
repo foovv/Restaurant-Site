@@ -1,4 +1,5 @@
 import CategoryMenu from './CategoryMenu'
+import CardMenu from './CardMenu'
 
 export default function Menu() {
 	const categories = ['Burgery', 'Pizza', 'Obiady', 'Drinki', 'Desery']
@@ -14,6 +15,12 @@ export default function Menu() {
 						<CategoryMenu key={category} name={category} />
 					))}
 				</div>
+			</div>
+			<div className='mx-auto max-w-[1200px] h-[600px] mt-5 flex '>
+				<CardMenu photoAlt='asd' photoSrc='asd.jpg' text='kotlet' cost='5zl' />
+				<CardMenu photoAlt='asd' photoSrc='asd.jpg' text='kotlet' cost='5zl' />
+				<CardMenu photoAlt='asd' photoSrc='asd.jpg' text='kotlet' cost='5zl' />
+				<CardMenu photoAlt='asd' photoSrc='asd.jpg' text='kotlet' cost='5zl' />
 			</div>
 		</section>
 	)
