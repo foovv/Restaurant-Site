@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-white: #ebe9ef;
+	--color-black: #110f0f;
+	--color-pureWhite: #f6f6f6;
+	--color-accent: #5b20c2;
+	--gradient-cwel: linear-gradient(90deg, #c3abed80 0%, #5b20c266 81%);
+
+	--font-montserat: 'Montserat';
+	--font-dmsans: 'DM Sans';
+	--font-fjalla: 'Fjalla One';
+
+	--breakpoint-smallset: 500px;
+	--breakpoint-small: 768px;
+	--breakpoint-medium: 1200px;
+}
+
+@utility bg-cwel {
+	background-image: var(--gradient-cwel);
+}
+
+@utility bg-dot {
+	background-image: radial-gradient(#5b20c2 1.5px, transparent 1.5px);
+	background-size: 64px 64px;
+	background-color: #f6f6f6;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat';
+}
